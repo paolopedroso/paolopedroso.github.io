@@ -1,3 +1,128 @@
-h1 {
-    color:blue;
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body {
+    background-color: beige;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+/* navigation */
+header {
+    background-color: black;
+    position: sticky;
+}
+
+header::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: inline-block
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: black;
+}
+/* fix later */
+/* banner */
+div.banner {
+    background-color: whitesmoke;
+    height: 500px;
+}
+
+
+#banner .content h1 {
+    color: white;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 100px;
+  }
+
+#banner .content p {
+    position: relative;
+    top: 50px;
+    width: 400px;
+    margin: 0 auto; 
+    background-color: rgba(211,211,211);
+    font-size: 20px;
+    margin: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#banner .content div.tag-opac {
+    opacity: 80%;
+    color: lightslategray;
+}
+
+#banner {
+    background-size: cover;
+    background-position: bottom center;
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    background-image: url(/assets/img/IMG_0105.JPG);
+  }
+
+  /* temporary image url */
+
+
+/* about me */
+
+div.about-me {
+    float: left;
+    position: relative;
+    left: 220px;
+    bottom: 20px;
+    font-size: 50px;
+}
+
+div.about-description {
+    position: relative;
+    top: 150px;
+    width: 400px;
+    right: 130px;
+    margin: 0 auto;
+    float: left;
+    padding: 10px;
+}
+
+div.about-description p {
+    font-size: 25px;
+}
+
+div.profile-pic img {
+    height: 500px;
+    width: 400px;
+    float: right;
+    position: relative;
+    right: 220px;
+}
+
+section.about-me-page {
+    position: relative;
+    top: 50px;
+    bottom: 50px;
 }
