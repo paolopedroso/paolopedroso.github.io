@@ -1,5 +1,20 @@
 <!--Code to use later or to be deleted -->
 
+<!--Languages-->
+
+        <section id="skills">
+            <a name="skills"></a><h2>Skills</h2>
+            <div class="card">
+                <div class="card-content">
+                    <div class="row text-center">
+                        <h3>Languages and Databases</h3>
+                        <div><img>Python 3</div>
+                        <div><img>HTML5</div>
+                        <div><img>CSS</div>
+                    </div>
+                </div>
+            </div>
+            
 <!--Libraries-->
 
             <div class="card">
