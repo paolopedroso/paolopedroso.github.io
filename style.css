@@ -60,7 +60,7 @@ div.banner {
     background-color: whitesmoke;
     height: 500px;
 }
-
+  
 /*viewport width*/
 #banner .content h1 {
     color: white;
@@ -83,6 +83,11 @@ div.banner {
     margin-right: auto;
     padding: 10px;
     text-align: center;
+}
+
+#banner .content a {
+    color: white;
+    text-decoration: none;
 }
 
 #banner .content div.tag-opac {
