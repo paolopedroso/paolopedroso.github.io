@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Paolo Pedroso</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     </head>
     <body>
         <header>
             <nav>
-                <ul class="navigation-bar">
-                    <li><a aria-label="goes-top-page" href="#top-of-page"><img><span>Paolo Pedroso</span></a>
-                    </li>
-
-                    <li><a href="#about"><span>About</span></a>
-                    </li>
-
-                    <li><a href="#experience"><span>Experience</span></a>
-                    </li>
-
-                    <li><a href="#skills"><span>Skills</span></a>
-                    </li>
-
-                    <li><a href="#education"><span>Education</span></a>
-                    </li>
-
-                    <li><a href="#contact"><span>Contact</span></a>
-                    </li>
-
-                    <li><a href="#resume"><span>Resume</span></a>
-                    </li>
-
-                </ul>
+                <div class="navigation" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul class="navigation-bar">
+                        <li><a><div class="name-nav"><span>Paolo Pedroso</span></div></a></li>
+                        <li><a href="#about"><span>About</span></a></li>
+                        <li><a href="#education"><span>Education</span></a></li>
+                        <li><a href="#skills"><span>Skills</span></a></li>                        
+                        <li><a href="#contact"><span>Contact</span></a></li>
+                        <li><a href="#resume"><span>Resume</span></a></li>
+                    </ul>             
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
         </header>
 
@@ -43,24 +34,66 @@
             </div>
         </div>
 
+<!--Javascript for Toggle menu-->
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.left = "0";
+    }
+    function hideMenu(){
+        navlinks.style.left = "-200px";
+    }
+
+</script>
+
 <!--About me-->
 
-        <section class="about-me-page">
-            <div class="about-me">
-                <a name="about"></a><h2>About me</h2>
+        <section id="about-section">
+            <div class="row">
+                <div class="about-col">
+                    <a name="about"></a><h1>About Me</h1>
+                    <p>Upcoming 2nd-year student at the University of Santa Cruz pursuing a Bachelor of Science in Computer Engineering. Passionate in both fields of Computer Science and Computer Engineering and motivated to learn more. Expecting to graduate in the Spring of 2025.<a href="https://www.linkedin.com/in/paolo-pedroso-848791232/" target="_blank" class="linkedin-about"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://github.com/paolopedroso" class="github-about" target="_blank"><i class="fa fa-github"></i></a></p>
+                </div>
+                <div class="about-col">
+                    <img src="/assets/img/photo%20of%20me%20in%20mountain%20view.jpg" alt="photo of me" class="profile">
+                </div>
             </div>
-
-            <div class="about-description">
-                <p>Upcoming 2nd-year student at the University of Santa Cruz pursuing a Bachelor of Science in Computer Engineering. Passionate in both fields of Computer Science and Computer Engineering and motivated to learn more. Expecting to graduate in the Spring of 2025.</p>
-                <!--Will add more to About me-->
-            </div>
-
-            <div class="profile-pic">
-                <img src="/assets/img/photo%20of%20me%20in%20mountain%20view.jpg" alt="photo of me"/>
-            </div>
-    <!--temporary profile pic url-->
-
         </section>
 
+<!-- /assets/img/photo%20of%20me%20in%20mountain%20view.jpg -->
+
+<!--experience section-->
+
+        <section id="education-section">
+            <a name="education"></a><h1 class="education-title">Education</h1> 
+            <div class="row edu-pos">
+                <div class="education-col ucsc-pos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/The_University_of_California_1868_UCSC.svg/1200px-The_University_of_California_1868_UCSC.svg.png" alt="ucsc logo" class="ucsc-pic">
+                </div>
+                <div class="education-col school">
+                    <h2>University of California, Santa Cruz</h2>
+                    <h3>B.S. Computer Engineering</h3>
+                    <p>Expected Graduation: May 2025</p>
+                </div>
+            </div>
+            <div class="course-work">
+                <p>Relevant Courses:</p>
+                <p>Computer Engineering</p>
+                <ul class="courses">
+                    <li>Intro to Programming Python (CSE 20)</li>
+                    <li>Computer Systems and Assembly and Lab* (CSE 12)</li>
+                    <li>Applied Discrete Mathematics* (CSE 16)</li>
+                </ul>
+                <p>Other</p>
+                <ul class="courses">
+                    <li>Calulus II (MATH 19B)</li>
+                    <li>Vector Calculus (MATH 23A)</li>
+                    <li>Linear Algebra (MATH 21)</li>
+                </ul>
+                <p class="progress">*in progress</p>
+            </div>
+        </section>
     </body>
 </html>
