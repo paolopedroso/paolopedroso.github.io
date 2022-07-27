@@ -101,16 +101,19 @@ div.banner {
   /* temporary image url */
 
 .row {
-    margin-top: 7%;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
 }
 
 /* about me */
 
+#about-section {
+    background: rgba(211,211,211,0.7);
+}
+
 .about-col {
     flex-basis: 49%;
-    background: rgba(211,211,211,0.7);
     margin-bottom: 5%;
     padding: 20px 12px;
 }
@@ -123,13 +126,14 @@ img.profile {
 
 div.about-col h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 5vw;
 }
 
 div.about-col p {
     width: 100%;
+    height: auto;
     max-width: 400px;
-    font-size: 25px;
+    font-size: 1.25vw;
     position: relative;
     left: 25%;
     text-indent: 1em;
@@ -292,8 +296,10 @@ VERTICAL PIC /assets/img/IMG_0041.JPG  */
 
 /*education section*/
 
-.education-section{
-    background: rgba(112, 112, 112, 0.907);
+#education-section {
+    background: rgb(242, 241, 241);
+    padding-top: 20px;
+    padding-bottom: 20px
 }
 
 div.edu-pos {
@@ -369,5 +375,164 @@ div.course-work {
     div.school {
         padding: 0px;
         margin: 0px;
+    }
+}
+
+/* Projects section */
+
+.projects-title {
+    text-align: center;
+    font-size: 60px;
+}
+
+.container {
+	display: flex; 
+	/*align-items: center;*/ 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: left; /* originally center */
+}
+
+.trow {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+#project-section {
+	margin: 50px;
+}
+
+#button-section {
+	justify-content: center;
+	align-items: center;
+}
+
+.filter-button {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	border-radius: 4px;
+	margin: 4px;
+	transition: 0.3s;
+}
+
+.filter-button:hover {
+	background-color: #ddd;
+}
+
+.filter-button.active {
+	background-color: #474d5a;
+	color: white;
+}
+
+.each-project {
+	position: relative;
+	height: 256px;
+	width: 256px;
+	margin: 2%;
+	display: none;
+}
+
+.show {
+	display: block;
+  }
+
+.proj-img {
+	width: 256px;
+	height: 256px;
+	border-radius: 6px;
+}
+
+
+.proj-description {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #F8F8F8;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity .4s, visibility .4s;
+    border-radius: 6px;
+}
+
+.each-project:hover .proj-description {
+	visibility: visible;
+	opacity: 0.9;
+}
+
+.proj-description:hover {
+	opacity: 1;
+}
+
+.img-description {
+	transition: .5s;
+	color: #575757;
+	text-align: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.img-description i, .img-description p, .img-description a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+.img-description i {
+	font-size: 12px;
+}
+
+.img-description:hover {
+	opacity: 1;
+}
+
+/* footer */
+
+footer {
+    height: 6em;
+    text-align: center;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.footer-row {
+    padding: 6px;
+    margin: 6px;
+}
+
+.footer-row a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-row a:hover {
+    color: lightgray;
+}
+
+@media (max-width: 700px){
+    button {
+        font-size: 10px;
+    }
+
+    .projects-title {
+        font-size: 5vw;
     }
 }
