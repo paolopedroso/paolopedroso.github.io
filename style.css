@@ -527,12 +527,27 @@ footer {
     color: lightgray;
 }
 
+.copy-rights {
+    font-size: 15px;
+    color: rgb(158, 155, 155, 0.7);
+}
+
 @media (max-width: 700px){
     button {
         font-size: 10px;
     }
 
+    .filter-button {
+        margin: 2px;
+        padding: 10px 10px;
+    }
+
     .projects-title {
         font-size: 5vw;
+    }
+
+    .copy-rights {
+        font-size: 10px;
+        color: rgb(158, 155, 155, 0.7);
     }
 }
