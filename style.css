@@ -96,7 +96,7 @@ div.banner {
     width: 100%;
     margin: 0;
     background-image: url(/assets/img/IMG_0105.JPG);
-  }
+}
 
   /* temporary image url */
 
@@ -120,7 +120,8 @@ div.banner {
 
 img.profile {
     height: auto;
-    width: 100%;
+    width: 80%;
+    margin-left: 30px;
 
 }
 
@@ -182,6 +183,12 @@ nav .fa-solid {
         transition: 1s;
     }
 
+    .row {
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }    
+
     .fa-times {
         text-align: right;
     }
@@ -224,7 +231,7 @@ nav .fa-solid {
         margin: 0 auto;
         font-size: 10vw;
         text-align: center;
-      }
+    }
 
       #banner .content p {
         position: relative;
@@ -246,9 +253,8 @@ nav .fa-solid {
         height: 100vw;
         width: 100%;
         margin: 0;
-        bottom: 20px;
         background-image: url(/assets/img/IMG_0041.JPG);
-      }
+    }
 
 /* HORIZONTAL PIC /assets/img/IMG_0105.JPG 
 VERTICAL PIC /assets/img/IMG_0041.JPG  */
@@ -256,7 +262,6 @@ VERTICAL PIC /assets/img/IMG_0041.JPG  */
     img.profile {
         height: 200px;
         width: 150px;
-        border: 1px solid white;
     }
 
     div.about-col p {
