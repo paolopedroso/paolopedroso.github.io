@@ -407,7 +407,9 @@ div.course-work {
 }
 
 #project-section {
-	margin: 50px;
+	padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #dad9d9;
 }
 
 #button-section {
@@ -503,6 +505,10 @@ div.course-work {
 
 .img-description:hover {
 	opacity: 1;
+}
+
+.coming-soon {
+    color: rgb(85, 85, 126)
 }
 
 /* footer */
