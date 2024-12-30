@@ -10,31 +10,31 @@ const works = [
       imgSrc: '/images/Dino-game-proj.jpg',
       title: 'Dino Game on FPGA',
       tags: ['System Verilog', 'FPGA'],
-      projectLink: ''
+      projectLink: 'https://github.com/paolopedroso/Dino-Run'
     },
     {
       imgSrc: '/images/sorting-visualizer-proj.jpg',
       title: 'Sorting Visualizer',
       tags: ['Python', 'PyGame', 'Algorithms'],
-      projectLink: ''
+      projectLink: 'https://github.com/paolopedroso/Sorting-Visualizer'
     },
     {
       imgSrc: '/images/stop-it-project.jpg',
       title: 'Stop It Game on FPGA',
       tags: ['System Verilog', 'FPGA'],
-      projectLink: ''
+      projectLink: 'https://github.com/paolopedroso/Stop-It-Game'
     },
     {
       imgSrc: '/images/router-proj.jpg',
       title: 'IPv4 Router',
       tags: ['Firewall','Mininet','WireShark'],
-      projectLink: ''
+      projectLink: 'https://github.com/paolopedroso/simpleipv4router'
     },
     {
       imgSrc: '/images/art-proj.jpg',
       title: 'Online Art Exhibit',
       tags: ['Web-Design', 'Development'],
-      projectLink: ''
+      projectLink: 'https://github.com/paolopedroso/online-art-exhibit'
     },
     {
       imgSrc: '/images/underconstruction-proj.webp',

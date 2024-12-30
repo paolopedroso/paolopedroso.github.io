@@ -1,0 +1,48 @@
+To add new updates or changes to your `paolopedroso.github.io` website, follow these steps depending on whether you're updating the source code or redeploying a build.
+
+---
+
+### **If You’re Adding/Updating Source Code:**
+1. **Make Changes Locally**:
+   Modify your source code (React components, Tailwind styles, etc.) as needed.
+
+2. **Commit and Push Changes to the Source Code**:
+   Push the updated source code to your **main branch** (or the branch you’re using for development):
+   ```bash
+   git add .
+   git commit -m "Update source code"
+   git push origin main
+   ```
+
+---
+
+### **If You Want to Deploy the Updated Build:**
+After making changes to the source code, you need to **build** the production version and **deploy** it.
+
+1. **Build the Project**:
+   Create a production-ready build by running:
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy the Build to `gh-pages`**:
+   Deploy the contents of the `dist` folder to the `gh-pages` branch:
+   ```bash
+   npm run deploy
+   ```
+
+This will replace the old build on the `gh-pages` branch with the new build, reflecting your changes on `https://paolopedroso.github.io/`.
+
+---
+
+### **Key Points**
+- **Source Code**: Push to the `main` branch.
+- **Deployed Site**: Use `npm run build` and `npm run deploy` to update the `gh-pages` branch.
+
+---
+
+### **When to Use Each**
+1. **Push to the `main` branch**: When you want to update or save changes to the source code.
+2. **Run `npm run deploy`**: When you want to publish the latest changes to your live site.
+
+Let me know if you need more details! 😊
