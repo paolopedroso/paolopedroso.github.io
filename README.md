@@ -1,8 +1,11 @@
-# React + Vite
+# Paolo Pedroso - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This fully responsive site is built with JavaScript, HTML, and CSS.
 
-Currently, two official plugins are available:
+### Contact
+- Phone: 510-861-8604
+- Email: paoloapedroso@gmail.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+Thank you for visiting my portfolio!
