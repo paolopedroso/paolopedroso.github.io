@@ -46,11 +46,6 @@ const skillItem = [
       label: 'CSS',
       desc: 'User Interface'
     },
-    {
-      imgSrc: '/images/tailwindcss.svg',
-      label: 'TailwindCSS',
-      desc: 'User Interface'
-    },
   ];
 
 // Frameworks and Tech
@@ -60,6 +55,11 @@ const skillItem2 = [
     imgSrc: '/images/react.svg',
     label: 'React',
     desc: 'Framework'
+  },
+  {
+    imgSrc: '/images/tailwindcss.svg',
+    label: 'TailwindCSS',
+    desc: 'User Interface'
   },
   {
     imgSrc: '/images/docker-svgrepo-com.svg',
