@@ -38,6 +38,8 @@ const Contact = () => {
 
                     <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
                         Contact Me!
+                        <br />
+                        Email: paoloapedroso@gmail.com
                     </p>
 
                     <div className="flex items-center gap-2 mt-auto">

@@ -8,10 +8,17 @@
  */
 import SkillCard from "./SkillCard";
 
+// Languages
+
 const skillItem = [
     {
       imgSrc: '/images/python-svgrepo-com (2).svg',
       label: 'Python',
+      desc: 'Software'
+    },
+    {
+      imgSrc: '/images/c-svgrepo-com.svg',
+      label: 'C',
       desc: 'Software'
     },
     {
@@ -30,12 +37,12 @@ const skillItem = [
       desc: 'Interaction'
     },
     {
-      imgSrc: '/images/react.svg',
-      label: 'React',
-      desc: 'Framework'
+      imgSrc: '/images/html-5-svgrepo-com.svg',
+      label: 'HTML5',
+      desc: 'Structure'
     },
     {
-      imgSrc: '/images/css3.svg',
+      imgSrc: '/images/css-3-svgrepo-com.svg',
       label: 'CSS',
       desc: 'User Interface'
     },
@@ -44,6 +51,32 @@ const skillItem = [
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
+  ];
+
+// Frameworks and Tech
+
+const skillItem2 = [
+  {
+    imgSrc: '/images/react.svg',
+    label: 'React',
+    desc: 'Framework'
+  },
+  {
+    imgSrc: '/images/docker-svgrepo-com.svg',
+    label: 'Docker',
+    desc: 'Framework'
+  },
+  {
+    imgSrc: '/images/git-svgrepo-com.svg',
+    label: 'Git',
+    desc: 'Technology'
+  },
+  {
+    imgSrc: '/images/wireshark.png',
+    label: 'Wireshark',
+    desc: 'Network'
+  },
+
   ];
 
 const Skill = () => {
@@ -60,9 +93,39 @@ const Skill = () => {
                     my exceptional, high-performing projects & applications
                </p>
 
+               {/* Languages */}
+
+               <h3 className="headline-3 reveal-up mt-8 mb-6">
+                    Languages
+                </h3>
+
                <div className="reveal-up grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
                     {
                         skillItem.map(({ imgSrc, label, desc}, key) =>
+                        (
+                            <SkillCard 
+                                key={key}
+                                imgSrc={imgSrc}
+                                label={label}
+                                desc={desc}
+                                className="reveal-up"
+                            />
+                        ))
+                    }
+               </div>
+
+            </div>
+            {/* Frameworks and Techologies */}
+            <div className="container">
+
+                <h3 className="headline-3 reveal-up mt-8 mb-6">
+                    Frameworks and Technologies
+                </h3>
+
+
+               <div className="reveal-up grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+                    {
+                        skillItem2.map(({ imgSrc, label, desc}, key) =>
                         (
                             <SkillCard 
                                 key={key}

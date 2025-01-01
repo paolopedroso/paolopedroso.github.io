@@ -7,6 +7,12 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
+      imgSrc: '/images/logo-paolo.png',
+      title: 'My Portfolio',
+      tags: ['Web-Design', 'Development'],
+      projectLink: 'https://github.com/paolopedroso/paolopedroso.github.io'
+    },
+    {
       imgSrc: '/images/Dino-game-proj.jpg',
       title: 'Dino Game on FPGA',
       tags: ['System Verilog', 'FPGA'],
@@ -19,15 +25,9 @@ const works = [
       projectLink: 'https://github.com/paolopedroso/Sorting-Visualizer'
     },
     {
-      imgSrc: '/images/stop-it-project.jpg',
-      title: 'Stop It Game on FPGA',
-      tags: ['System Verilog', 'FPGA'],
-      projectLink: 'https://github.com/paolopedroso/Stop-It-Game'
-    },
-    {
       imgSrc: '/images/router-proj.jpg',
       title: 'IPv4 Router',
-      tags: ['Firewall','Mininet','WireShark'],
+      tags: ['Firewall','Mininet','Wireshark'],
       projectLink: 'https://github.com/paolopedroso/simpleipv4router'
     },
     {
