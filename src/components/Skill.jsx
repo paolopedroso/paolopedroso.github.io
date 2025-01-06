@@ -59,7 +59,7 @@ const skillItem2 = [
   {
     imgSrc: '/images/tailwindcss.svg',
     label: 'TailwindCSS',
-    desc: 'User Interface'
+    desc: 'Framework'
   },
   {
     imgSrc: '/images/docker-svgrepo-com.svg',

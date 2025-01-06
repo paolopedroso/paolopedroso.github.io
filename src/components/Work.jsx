@@ -38,8 +38,8 @@ const works = [
     },
     {
       imgSrc: '/images/underconstruction-proj.webp',
-      title: 'Bookstore App *Underconstruction',
-      tags: ['MERN', 'Web-design', 'Development'],
+      title: 'Next Project Coming Soon...',
+      tags: [],
       projectLink: ''
     },
   ];
