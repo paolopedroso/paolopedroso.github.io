@@ -31,7 +31,9 @@ const About = () => {
                         Welcome! I&apos;m Paolo, a student from
                         the University of California, Santa Cruz
                         majoring in Computer Engineering with a 
-                        Systems Programming Concentration.
+                        Systems Programming Concentration &#40;Python, C/C++,
+                        Verilog&#41;. I am currently seeking exciting opportunities
+                        in the tech industry!
                     </p>
                     <div className="flex flex-wrap items-center gap-4 md:gap-7">
                         {
