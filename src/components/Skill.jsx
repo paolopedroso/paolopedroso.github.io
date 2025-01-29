@@ -67,14 +67,9 @@ const skillItem2 = [
     desc: 'Framework'
   },
   {
-    imgSrc: '/images/git-svgrepo-com.svg',
-    label: 'Git',
-    desc: 'Technology'
-  },
-  {
-    imgSrc: '/images/wireshark.png',
-    label: 'Wireshark',
-    desc: 'Network'
+    imgSrc: '/images/klayout-logo.png',
+    label: 'KLayout',
+    desc: 'Hardware'
   },
 
   ];
@@ -119,7 +114,7 @@ const Skill = () => {
             <div className="container">
 
                 <h3 className="headline-3 reveal-up mt-8 mb-6">
-                    Frameworks and Technologies
+                    Frameworks and More...
                 </h3>
 
 
