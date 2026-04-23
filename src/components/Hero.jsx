@@ -1,75 +1,94 @@
-/**
- * @copyright 2024 Paolo Pedroso
- * @license Apache-2.0 
- */
+const linkClass =
+  "underline underline-offset-4 hover:text-black dark:hover:text-white";
 
-/**
- * Components 
- */
+const Hero = () => (
+  <section className="pt-10 sm:pt-16 pb-10 sm:pb-12 flex flex-col sm:flex-row sm:items-start gap-6 sm:gap-8">
+    <img
+      src="/images/headshot.jpg"
+      alt="Paolo Pedroso"
+      className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-md bg-neutral-100 dark:bg-neutral-900 flex-shrink-0"
+    />
+    <div className="min-w-0">
+      <h1 className="text-2xl font-semibold tracking-tight mb-3">
+        Paolo Pedroso
+      </h1>
+      <div className="space-y-1 text-neutral-800 dark:text-neutral-200">
+        <p>Incoming M.S. Student, Computer Science and Engineering</p>
+        <p className="text-neutral-700 dark:text-neutral-300">
+          University of California, Santa Cruz
+        </p>
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Advisor:{" "}
+          <a
+            href="https://vlsida.github.io/about/"
+            target="_blank"
+            rel="noreferrer"
+            className={linkClass}
+          >
+            Matthew Guthaus
+          </a>
+        </p>
+      </div>
 
-import { ButtonPrimary, ButtonOutline } from "./Button";
-
-const Hero = () => {
-    return (
-        <section
-            id="home"
-            className="pt-28 lg:pt-36"
+      <p className="mt-5 leading-relaxed text-neutral-800 dark:text-neutral-200">
+        I&apos;m a researcher in the{" "}
+        <a
+          href="https://vlsida.github.io/"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
         >
-            <div className="container lg:grid lg:grid-cols-2 items-center lg:gap-10">
+          VLSI Design and Automation Lab
+        </a>
+        , part of the{" "}
+        <a
+          href="https://hsc.ucsc.edu/"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
+        >
+          UCSC Hardware Systems Collective
+        </a>
+        .
+      </p>
 
-                <div>
-                    
-                    <div className="flex items-center gap-3">
-                        <figure className="img-box w-9 h-9 rounded-lg">
-                            <img 
-                            src="/images/avatar-paolo.jpg" 
-                            width={40}
-                            height={40}
-                            className="img-cover"
-                            alt="" 
-                            />
-                        </figure>
+      <p className="mt-4 leading-relaxed text-neutral-800 dark:text-neutral-200">
+        Previously worked on two-phase clocking, focusing on the backend to
+        build an end-to-end RTL-to-GDS flow for converting single-phase,
+        edge-triggered designs into two-phase, non-overlapping latch-based
+        designs in OpenROAD. Built on the foundation of frontend work from a
+        prior master&apos;s thesis.
+      </p>
 
-                        <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
-                            <span className="relative w-2 h-2 rounded-full bg-emerald-400">
-                                <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
-                            </span>
-                            Available for work
-                        </div>
-                    </div>
-                    <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
-                        Building the Future of Software.
-                    </h2>
+      <p className="mt-4 text-sm text-neutral-700 dark:text-neutral-300">
+        Find me on{" "}
+        <a
+          href="https://github.com/paolopedroso"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
+        >
+          GitHub
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://www.linkedin.com/in/paolo-pedroso-848791232/"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
+        >
+          LinkedIn
+        </a>
+        .
+      </p>
+      <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">
+        Email:{" "}
+        <a href="mailto:paoloapedroso@gmail.com" className={linkClass}>
+          paoloapedroso@gmail.com
+        </a>
+      </p>
+    </div>
+  </section>
+);
 
-                    <div className="flex items-center gap-3">
-                        <ButtonPrimary
-                            label="Download CV"
-                            icon="download"
-                        />
-
-                        <ButtonOutline 
-                            href="#about"
-                            label="Scroll down"
-                            icon="arrow_downward"
-                        />
-                    </div>
-                </div>
-
-                <div className="hidden lg:block">
-                    <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
-                        <img 
-                        src="/images/hero-paolo.png"
-                        width={656}
-                        height={800}
-                        alt="Paolo Pedroso"
-                        className="w-full"
-                        />
-                    </figure>
-                </div>
-
-            </div>
-        </section>
-    )
-}
-
-export default Hero
+export default Hero;
