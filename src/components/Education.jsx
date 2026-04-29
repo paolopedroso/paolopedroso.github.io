@@ -7,7 +7,7 @@ const degrees = [
   {
     degree: "B.S. Computer Engineering, Systems Programming Concentration",
     school: "University of California, Santa Cruz",
-    note: "",
+    note: "Expected 2026",
   },
 ];
 

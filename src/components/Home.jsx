@@ -6,7 +6,6 @@ import Interests from "./Interests";
 import Publications from "./Publications";
 import Projects from "./Projects";
 import Education from "./Education";
-import Contact from "./Contact";
 
 const Home = () => {
   const location = useLocation();
@@ -27,7 +26,6 @@ const Home = () => {
       <Publications />
       <Projects />
       <Education />
-      <Contact />
     </main>
   );
 };

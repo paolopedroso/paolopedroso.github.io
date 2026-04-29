@@ -113,13 +113,6 @@ _June 2025 to September 2025_
 
 This site. Minimalist, academic-style personal portfolio built with React, Vite, and Tailwind CSS.
 
-## Features
-
-- Dark and light themes with a persisted preference.
-- Per-project pages with two tabs: a live README fetched from GitHub and a custom Description.
-- Image and link URLs inside fetched READMEs are rewritten to the source repository so relative paths render correctly.
-- Responsive layout tuned for phone, tablet, and desktop.
-
 ## Stack
 
 - React with Vite

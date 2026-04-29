@@ -4,9 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 const sections = [
   { label: "Research", id: "interests" },
   { label: "Publications", id: "publications" },
-  { label: "Projects", id: "projects" },
+  { label: "Personal Projects", id: "projects" },
   { label: "Education", id: "education" },
-  { label: "Contact", id: "contact" },
 ];
 
 const getInitialTheme = () => {

@@ -57,7 +57,10 @@ const Hero = () => (
         build an end-to-end RTL-to-GDS flow for converting single-phase,
         edge-triggered designs into two-phase, non-overlapping latch-based
         designs in OpenROAD. Built on the foundation of frontend work from a
-        prior master&apos;s thesis.
+        prior master&apos;s thesis. Also worked on a Ternary Matrix
+        Multiplication Processor (2025-2026) and HighTide Benchmarks
+        (2025-2026), and currently participating in the ASU MLCAD Contest
+        (2026).
       </p>
 
       <p className="mt-4 text-sm text-neutral-700 dark:text-neutral-300">
