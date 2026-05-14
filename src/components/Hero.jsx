@@ -69,7 +69,7 @@ const Hero = () => (
         prior master&apos;s thesis. Also worked on a Ternary Matrix
         Multiplication Processor (2025-2026) and{" "}
         <a
-          href="https://vlsida.github.io/HighTide/index.html#"
+          href="https://vlsida.github.io/HighTide/"
           target="_blank"
           rel="noreferrer"
           className={linkClass}
