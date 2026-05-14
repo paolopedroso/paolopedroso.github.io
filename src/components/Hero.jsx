@@ -58,8 +58,24 @@ const Hero = () => (
         edge-triggered designs into two-phase, non-overlapping latch-based
         designs in OpenROAD. Built on the foundation of frontend work from a
         prior master&apos;s thesis. Also worked on a Ternary Matrix
-        Multiplication Processor (2025-2026) and HighTide Benchmarks
-        (2025-2026), and currently participating in the ASU MLCAD Contest
+        Multiplication Processor (2025-2026) and{" "}
+        <a
+          href="https://vlsida.github.io/HighTide/index.html#"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
+        >
+          HighTide Benchmarks
+        </a>{" "}
+        (2025-2026), and currently participating in the{" "}
+        <a
+          href="https://asu-vda-lab.github.io/MLCAD26-Contest/"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
+        >
+          ASU MLCAD Contest
+        </a>{" "}
         (2026).
       </p>
 

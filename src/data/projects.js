@@ -103,21 +103,4 @@ Dynamic black-box SRAM generator based on [BSG FakeRAM](https://github.com/bespo
 _June 2025 to September 2025_
 `,
   },
-  {
-    slug: "portfolio",
-    title: "Portfolio",
-    desc: "This site.",
-    tags: ["React", "Vite", "Tailwind"],
-    link: "https://github.com/paolopedroso/paolopedroso.github.io",
-    customDescription: `## Overview
-
-This site. Minimalist, academic-style personal portfolio built with React, Vite, and Tailwind CSS.
-
-## Stack
-
-- React with Vite
-- Tailwind CSS
-- react-router, react-markdown, remark-gfm, rehype-raw
-`,
-  },
 ];
