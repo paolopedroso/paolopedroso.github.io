@@ -56,7 +56,16 @@ const Hero = () => (
         Previously worked on two-phase clocking, focusing on the backend to
         build an end-to-end RTL-to-GDS flow for converting single-phase,
         edge-triggered designs into two-phase, non-overlapping latch-based
-        designs in OpenROAD. Built on the foundation of frontend work from a
+        designs in{" "}
+        <a
+          href="https://github.com/The-OpenROAD-Project/OpenROAD"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
+        >
+          OpenROAD
+        </a>
+        . Built on the foundation of frontend work from a
         prior master&apos;s thesis. Also worked on a Ternary Matrix
         Multiplication Processor (2025-2026) and{" "}
         <a
