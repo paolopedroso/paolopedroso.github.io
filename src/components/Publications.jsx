@@ -31,6 +31,7 @@ const submitted = [
         Submitted to <em>ACM/IEEE MLCAD &apos;26</em>, Jeju, South Korea.
       </>
     ),
+    links: [{ label: "arxiv", url: "https://arxiv.org/abs/2606.04126" }],
   },
 ];
 
