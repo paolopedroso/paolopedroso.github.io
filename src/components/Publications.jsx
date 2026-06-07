@@ -13,7 +13,10 @@ const entries = [
         Lakes, NY, USA.
       </>
     ),
-    links: [{ label: "arxiv", url: "https://arxiv.org/abs/2605.05374" }],
+    links: [
+      { label: "arxiv", url: "https://arxiv.org/abs/2605.05374" },
+      { label: "code", url: "https://github.com/paolopedroso/ORFS-FF2Latch" },
+    ],
   },
   {
     title: "HighTide: An Agent-Curated Open-Source VLSI Benchmark Suite",
@@ -31,6 +34,7 @@ const entries = [
     links: [
       { label: "arxiv", url: "https://arxiv.org/abs/2606.04126" },
       { label: "website", url: "https://vlsida.github.io/HighTide/" },
+      { label: "code", url: "https://github.com/VLSIDA/HighTide" },
     ],
   },
   {
