@@ -1,4 +1,4 @@
-const accepted = [
+const entries = [
   {
     title:
       "An Open-Source Flow for Single-Phase, Edge-Triggered to Two-Phase, Non-Overlapping Clocking Conversion",
@@ -15,9 +15,6 @@ const accepted = [
     ),
     links: [{ label: "arxiv", url: "https://arxiv.org/abs/2605.05374" }],
   },
-];
-
-const submitted = [
   {
     title: "HighTide: An Agent-Curated Open-Source VLSI Benchmark Suite",
     authors: (
@@ -31,21 +28,23 @@ const submitted = [
         Submitted to <em>ACM/IEEE MLCAD &apos;26</em>, Jeju, South Korea.
       </>
     ),
-    links: [{ label: "arxiv", url: "https://arxiv.org/abs/2606.04126" }],
+    links: [
+      { label: "arxiv", url: "https://arxiv.org/abs/2606.04126" },
+      { label: "website", url: "https://vlsida.github.io/HighTide/" },
+    ],
+  },
+  {
+    title:
+      "An End-to-End Open-Source Flow for Flip-Flop to Two-Phase Latch Conversion with Synthesis Optimizations and Clock Gating",
+    authors: (
+      <>
+        <strong>Pedroso, P.</strong> (2026).
+      </>
+    ),
+    venue: <>Bachelor&apos;s Thesis. Advised by Guthaus, M. R.</>,
+    links: [{ label: "pdf", url: "/pdfs/pedroso_2026_bs_thesis.pdf" }],
   },
 ];
-
-const bachelorsThesis = {
-  title:
-    "An End-to-End Open-Source Flow for Flip-Flop to Two-Phase Latch Conversion with Synthesis Optimizations and Clock Gating",
-  authors: (
-    <>
-      <strong>Pedroso, P.</strong> (2026). [Bachelor&apos;s thesis]. Advised by
-      M. R. Guthaus.
-    </>
-  ),
-  links: [{ label: "pdf", url: "/pdfs/pedroso_2026_bs_thesis.pdf" }],
-};
 
 const Entry = ({ title, authors, venue, links }) => (
   <li>
@@ -82,40 +81,11 @@ const Publications = () => (
     <h2 className="text-xs uppercase tracking-widest text-neutral-500 mb-5">
       Publications
     </h2>
-
-    <h3 className="text-sm font-medium text-neutral-800 dark:text-neutral-200 mb-4">
-      Accepted Papers
-    </h3>
     <ul className="space-y-6">
-      {accepted.map((p, i) => (
+      {entries.map((p, i) => (
         <Entry key={i} {...p} />
       ))}
     </ul>
-
-    <h3 className="text-sm font-medium text-neutral-800 dark:text-neutral-200 mt-10 mb-4">
-      Submitted Papers
-    </h3>
-    <ul className="space-y-6">
-      {submitted.map((p, i) => (
-        <Entry key={i} {...p} />
-      ))}
-    </ul>
-
-    <h3 className="text-sm font-medium text-neutral-800 dark:text-neutral-200 mt-10 mb-4">
-      Bachelor&apos;s Thesis
-    </h3>
-    <ul className="space-y-6">
-      <Entry {...bachelorsThesis} />
-    </ul>
-
-    {/*
-    <h3 className="text-sm font-medium text-neutral-800 dark:text-neutral-200 mt-10 mb-4">
-      Master&apos;s Thesis
-    </h3>
-    <p className="text-sm text-neutral-600 dark:text-neutral-400 italic">
-      In progress.
-    </p>
-    */}
   </section>
 );
 
