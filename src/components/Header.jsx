@@ -3,8 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const sections = [
   { label: "Research", id: "interests" },
-  { label: "Publications", id: "publications" },
-  { label: "Personal Projects", id: "projects" },
+  { label: "Publications & Posters", id: "publications" },
+  // { label: "Personal Projects", id: "projects" },
   { label: "Education", id: "education" },
 ];
 

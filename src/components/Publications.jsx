@@ -9,8 +9,8 @@ const entries = [
     ),
     venue: (
       <>
-        Accepted at <em>ACM GLSVLSI &apos;26</em> (oral and poster), Finger
-        Lakes, NY, USA.
+        In the proceedings of <em>ACM GLSVLSI &apos;26</em> (oral and poster),
+        Finger Lakes, NY, USA.
       </>
     ),
     links: [
@@ -28,13 +28,30 @@ const entries = [
     ),
     venue: (
       <>
-        Submitted to <em>ACM/IEEE MLCAD &apos;26</em>, Jeju, South Korea.
+        Preprint, <em>arXiv:2606.04126</em>.
       </>
     ),
     links: [
       { label: "arxiv", url: "https://arxiv.org/abs/2606.04126" },
       { label: "website", url: "https://vlsida.github.io/HighTide/" },
       { label: "code", url: "https://github.com/VLSIDA/HighTide" },
+    ],
+  },
+  {
+    title: "HighTide: An Open-Source Hardware Benchmark Suite",
+    authors: (
+      <>
+        Goldblatt, B., <strong>Pedroso, P.</strong>, Modaresi, F., &amp;
+        Guthaus, M. R. (2026).
+      </>
+    ),
+    venue: (
+      <>
+        Poster presented at <em>ACM/IEEE DAC</em>, Long Beach, CA, USA.
+      </>
+    ),
+    links: [
+      { label: "pdf", url: "/pdfs/HighTide%20WIP%20DAC%20Poster%202026.pdf" },
     ],
   },
   {
@@ -83,7 +100,7 @@ const Publications = () => (
     className="py-10 border-t border-neutral-200 dark:border-neutral-800"
   >
     <h2 className="text-xs uppercase tracking-widest text-neutral-500 mb-5">
-      Publications
+      Publications &amp; Posters
     </h2>
     <ul className="space-y-6">
       {entries.map((p, i) => (

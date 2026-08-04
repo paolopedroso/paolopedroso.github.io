@@ -5,6 +5,8 @@ const OPENROAD_URL = "https://github.com/The-OpenROAD-Project/OpenROAD";
 const OPENROAD_FLOW_URL =
   "https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts";
 
+const topics = ["EDA", "Logic synthesis", "GNN/NN"];
+
 const Interests = () => (
   <section
     id="interests"
@@ -37,10 +39,15 @@ const Interests = () => (
       on open-source PDKs, exploring where learned models can improve on the
       simplifying approximations classical EDA tools rely on.
     </p>
-    <ul className="list-disc pl-5 space-y-2 text-neutral-800 dark:text-neutral-200 leading-relaxed">
-      <li>EDA</li>
-      <li>Logic synthesis</li>
-      <li>GNN/NN</li>
+    <ul className="flex flex-wrap gap-2">
+      {topics.map((t) => (
+        <li
+          key={t}
+          className="text-sm text-neutral-700 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-800 rounded-full px-3 py-1"
+        >
+          {t}
+        </li>
+      ))}
     </ul>
   </section>
 );
